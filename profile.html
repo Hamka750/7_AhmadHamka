@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Mahasiswa</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="WhatsApp Image 2024-10-24 at 08.26.12_506a438c.jpg" alt="Profile Picture" class="profile-img">
+        <h1>Profile Mahasiswa</h1>
+    </div>
+    
+
+    <div class="main-container">
+        <div class="content">
+            <div class="navbar">
+                <a href="javascript:void(0);" onclick="showSection('biodata')">Biodata</a>
+                <a href="javascript:void(0);" onclick="showSection('pendidikan')">Pendidikan</a>
+                <a href="javascript:void(0);" onclick="showSection('pengalaman')">Pengalaman</a>
+                <a href="javascript:void(0);" onclick="showSection('keahlian')">Keahlian</a>
+                <a href="javascript:void(0);" onclick="showSection('publikasi')">Publikasi</a>
+            </div>
+
+            <div class="section active" id="biodata">
+                <h2>Biodata</h2>
+                <p><strong>Nim:</strong> 2023081040</p>
+                <p><strong>Nama:</strong> Ahmad Hamka Mujaddid Maulana</p>
+                <p><strong>Prodi:</strong> Sistem Informasi</p>
+            </div>
+            <div class="section" id="pendidikan">
+                <h2>Pendidikan</h2>
+                <p><strong>Sekolah Dasar:</strong> SD Islam Ruhama</p>
+                <p><strong>Sekolah Menengah Pertama:</strong> Al Zaytun International School</p>
+                <p><strong>Sekolah Menengah Atas:</strong> MA Al Azhar Asy Syarif</p>
+                <p><strong>Universitas:</strong> Universitas Pembangunan Jaya</p>
+            </div>
+
+            <div class="section" id="pengalaman">
+                <h2>Pengalaman</h2>
+                <p><strong>Magang:</strong> Crew Kamera</p>
+                <p><strong>UI/UX:</strong> Educlaas</p>
+            </div>
+
+            <div class="section" id="keahlian">
+                <h2>Keahlian</h2>
+                <p><strong>Bahasa Pemrograman:</strong> Python, Html, Css</p>
+                <p><strong>Desain Grafis:</strong> Adobe Photoshop, Illustrator, Figma, Axure RP</p>
+            </div>
+
+            <div class="section" id="publikasi">
+                <h2>Publikasi</h2>
+                <p><strong>Dobu Martial Art Website</strong> Sebuah website interaktif untuk akademi bela diri yang menampilkan informasi mengenai kelas, jadwal pelatihan, pelatih, dan galeri aktivitas. Website ini dirancang dengan fokus pada pengalaman pengguna (UI/UX) untuk memudahkan calon siswa mendaftar dan berinteraksi dengan akademi secara online.</p>
+                <p><strong>Car Dealer Website</strong> Platform penjualan mobil yang dikembangkan untuk dealer mobil, menyediakan fitur katalog mobil, detail spesifikasi, harga, dan opsi pembelian atau pemesanan secara online.</p>
+            </div>
+        </div>
+        <div class="hobby-box">
+            <h2>Hobby: Basketball</h2>
+            <div class="hobby-images">
+                <img src="WhatsApp Image 2024-10-24 at 08.22.47_0e1890f5.jpg" alt="Basketball 1" class="hobby-img">
+                <img src="WhatsApp Image 2024-10-24 at 08.22.47_444ab950.jpg" alt="Basketball 2" class="hobby-img">
+                <img src="WhatsApp Image 2024-10-24 at 08.22.47_4707b542.jpg" alt="Basketball 3" class="hobby-img">
+            </div>
+        </div>        
+    </div>
+
+    <div class="footer">
+        <a href="#">Facebook</a>
+        <a href="#">Github</a>
+        <a href="#">Instagram</a>
+        <p>© 2024 My Profile. All rights reserved.</p>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
